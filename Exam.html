@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html lang="jp">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>最終課題</title>
+        </head>
+
+    <body>
+        <!--問１-->
+        <div id="assignment1">
+            <p>
+                <label for = "input1">問１</label>
+                <input type="text" id="input1" placeholder="e.g. 24">
+                <button id="record" onclick="count()">数字を追加</button>
+                <button id="showall" onclick="show()">ミラーを表示</button>
+            </p>
+            <h4>アウトプット</h4><br>
+            <p id="output1"></p>
+        </div>
+        <hr>
+
+        <!--問２-->
+        <div id="assignment2">
+            <p>
+                <label for = "input2">問２</label>
+                <input type = "text" id="input2" placeholder="e.g. 24">
+                <button id = "add" onclick = "adds()">数字を追加</button>
+                <button id = "secs" onclick = "sec()">２番目に大きい数字を表示</button>
+            </p>
+            <h4>アウトプット</h4><br>
+            <p id = "output2"></p>
+        </div>
+        <hr>
+
+        <!--問３-->
+        <div id="assignment3">
+            <p>
+                <label for = "input3">問3</label>
+                <input type = "text" id = "input3" placeholder="e.g. 24">
+                <button id = "judgement" onclick = "judge()">判定</button>
+            </p>
+            <h4>アウトプット</h4><br>
+            <p id = "output3"></p>
+        </div>
+        <hr>
+
+        <!--問４-->
+        <div id="assignment4">
+            <form>
+                <legend>予約登録</legend>
+                <p>
+                    <label for="name">おなまえ</label>
+                    <input type="text" id="name" placeholder="e.g. 北陸　太郎">
+                </p>
+                <p>
+                    <label>人数:</label>
+                    <select id="number" name="number">
+                        <option value="0">人数を選択して下さい</option>
+                        <option value="1">1人</option>
+                        <option value="2">2人</option>
+                        <option value="3">3人</option>
+                        <option value="4">4人</option>
+                        <option value="5">5人以上</option>
+                    </select>
+                    <p id="username"></p>
+                </p>
+                <p>
+                    <label for="mail">メールアドレス:</label>
+                    <input type="text" name="mail" id="mail" placeholder="e.g. ○○○○○○@jaist.ac.jp">
+                </p>
+                <p>
+                    <label>日付と時間:</label>
+                    <input type="checkbox" name="day" value="5/4 18:00">5/4 18:00
+                    <input type="checkbox" name="day" value="5/4 18:30">5/4 18:30
+                    <input type="checkbox" name="day" value="5/4 19:00">5/4 19:00
+                    <input type="checkbox" name="day" value="5/5 18:00">5/5 18:00
+                    <input type="checkbox" name="day" value="5/5 18:30">5/5 18:30
+                    <input type="checkbox" name="day" value="5/5 19:00">5/5 19:00
+                </p>
+                <p>
+                    <label for="msg">備考:</label>
+                    <textarea id="msg" name="msg" placeholder="ご要望がございましたらご記入ください"></textarea>
+                </p>
+                <p>
+                    <button type="button" id="seed">送信</button>
+                    <button type="button" id="open">予約の一覧表示</button>
+                </p>
+            </form>
+            <br>
+            <div>
+                <h4>アウトプット</h4>
+                <p id="output"></p>
+            </div>
+        </div>
+        <hr>
+    </body>
+
+    <script type="text/javascript" src="./Exam.js"></script>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>for文</title>
+    </head>
+
+    <body>
+        <h2>フォーム</h2>
+        <form>
+            <p>
+                <label for="num"></label>
+                <input type="text" name="num" id="num">
+                <button type="button" id="cou">処理実行</button>
+            </p>
+            <p>
+                <label for="start">開始数字</label>
+                <input type="text" name="start" id="start">
+                <label for="end">終了数字</label>
+                <input type="text" name="end" id="end">
+                <button type="button" id="odd">処理実行</button>
+            <p>
+                <button type="button" id="mul">九九表示</button>
+            </p>
+        </form>
+
+        <div>
+            <h3>アウトプット：</h3>
+                <p id="output1"></p>
+                <p id="output2"></p>
+                <p id="output3"></p>
+        </div>
+
+        <script src="./src/j5.js" type="text/javascript"></script>
+
+    </body>
+</html>

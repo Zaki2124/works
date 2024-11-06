@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>J7</title>
+    </head>
+
+    <body>
+        <form>
+            <legend>レストラン予約</legend>
+            <p>
+                <label for="account_id">名前:</label>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <label>人数:</label>
+                <select id="number" name="number">
+                    <option value="0">人数を選択して下さい</option>
+                    <option value="1">1人</option>
+                    <option value="2">2人</option>
+                    <option value="3">3人</option>
+                    <option value="4">4人</option>
+                    <option value="5">5人以上</option>
+                </select>
+                <p id="username"></p>
+            </p>
+            <p>
+                <label for="account_id">ご連絡先:</label>
+                <input type="text" name="mail" id="mail">
+            </p>
+            <p>
+                <label>日付と時間:</label>
+                <input type="checkbox" name="day" value="5/4 18:00">
+                5/4 18:00
+                <input type="checkbox" name="day" value="5/4 18:30">
+                5/4 18:30
+                <input type="checkbox" name="day" value="5/4 19:00">
+                5/4 19:00
+                <input type="checkbox" name="day" value="5/5 18:00">
+                5/5 18:00
+                <input type="checkbox" name="day" value="5/5 18:30">
+                5/5 18:30
+                <input type="checkbox" name="day" value="5/5 19:00">
+                5/5 19:00
+            </p>
+            <p>
+                <label for="msg">備考:</label>
+                <textarea id="msg" name="msg"></textarea>
+            </p>
+            <p>
+                <button type="reset">リセット</button>
+                <button type="button" id="seed">送信</button>
+            </p>
+        </form>
+        <br>
+        <div class="col-lg-3 col-md-3 ">
+            <div>
+            <p id="output"></p>
+            </div>
+        </div>
+
+        <script src="./src/j7.js" type="text/javascript"></script>
+    </body>
+
+</html>

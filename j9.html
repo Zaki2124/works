@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="jp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>日記</title>
+    </head>
+
+    <body>
+        <div class="from">
+            <!--日付の設定-->
+            <p>
+                <label for = "input1">日付</label>
+                <input type="date" id="input1">
+            </p>
+            <!--天気の設定-->
+            <P>
+                <label for = "input2">天気</label>
+                <select id= "input2">
+                    <option>天候を選択</option>
+                    <option>快晴</option>
+                    <option>晴れ</option>
+                    <option>曇り</option>
+                    <option>雨</option>
+                    <option>雪</option>
+                </select>
+            </P>
+            <!--内容の設定-->
+            <p>
+                <label for = "input3">内容</label>
+                <input type="text" id="input3">
+            </p>
+            <button id="record" onclick="submit()">記録</button>
+            <button id="showall" onclick="show()">全ての記録を表示</button>
+        </div>
+
+        <div class="output">
+            <!--出力-->
+            <h4>アウトプット</h4>
+            <p id="output"></p>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="./src/j9.js"></script>
+</html>

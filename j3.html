@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html lang="jp">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>申込みフォーム</title>
+            <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> //jQuery設定-->
+        </head>
+    <body>
+        <header>
+        </header>
+        <main>
+        <!--
+            <form>
+                <legend>登録</legend>
+                <p>
+                    <label for="account_id">アカウント</label>
+                    <input type="text" name="account_id" id="account_id">
+                </p>
+                <p>
+                    <label for="account_password">パスワード</label>
+                    <input type="password" name="account_password" id="account_password">
+                </p>
+                <p>
+                    <label for="msg">メッセージ：</label>
+                    <textarea id="msg" name="msg"></textarea>
+                </p>
+                <p>
+                    <button type="reset">リセット</button>
+                    <button type="button">確認</button>
+                    <button type="submit">送信</button>
+                </p>
+
+                <p>
+                    <label>性別</label>
+                    <input type="radio" name="gender" value="male">
+                    <input type="radio" name="gender" value="female">
+                    <input type="radio" name="gender" value="other">
+                </p>
+                <p>
+                    <label>年齢：</label>
+                    <section id="age" name="age">
+                        <option>20歳以下</option>
+                        <option>20歳～40歳</option>
+                        <option>40歳以上</option>
+                    </section>
+                </p>
+                <p>
+                    <label>好きな料理：</label>
+                    <input type="checkbox" name="meal" value="yakiniku">
+                    <input type="checkbox" name="meal" value="gyudon">
+                    <input type="checkbox" name="meal" value="curry">
+                </p>
+            </form>
+            -->
+
+            <form>
+                <legend>予約フォーム</legend>
+
+                <!--名前-->
+                <p>
+                    <label for="name_id">お名前：</label>
+                    <input type="text" name="name_id" id="name_id">
+                </p>
+
+                <!--人数-->
+                <p>
+                    <label>来店人数（予定）：</label>
+                    <select id="number_of_people" name="number_of_people">
+                        <option>選択して下さい</option>
+                        <option>1人</option>
+                        <option>2人</option>
+                        <option>3人</option>
+                        <option>4人</option>
+                        <option>5人以上</option>
+                    </select>
+                </p>
+
+                <!--連絡先-->
+                <p>
+                    <label for="mail">ご連絡先：</label>
+                    <input type="text" name="mail" id="mail">
+                </p>
+
+                <!--日付・時間-->
+                <p>
+                    <label>日付・時間</label>
+                    <input type="radio" name="day" value="2024/05/05_18:00">2024/05/05_18:00
+                    <input type="radio" name="day" value="2024/05/05_18:30">2024/05/05_18:30
+                    <input type="radio" name="day" value="2024/05/05_19:00">2024/05/05_19:00
+                    <input type="radio" name="day" value="2024/05/05_19:30">2024/05/05_19:30
+                    <input type="radio" name="day" value="2024/05/05_20:00">2024/05/05_20:00
+                    <input type="radio" name="day" value="2024/05/05_21:00">2024/05/05_21:00
+                </p>
+                <!--備考-->
+                <p>
+                    <label for="msg">備考：</label>
+                    <textarea id="msg" name="msg"></textarea>
+                </p>
+                <!--送信-->
+                <p>
+                    <button type="reset">リセット</button>
+                    <button type="button" id="verify">送信</button>
+                </p>
+
+            </form>
+            <script src="./src/js3.js" type="text/javascript"></script>
+
+            <div class="col-lg-3 col-md-3">
+                <h3>予約結果</h3>
+                <div>
+                <p id="output-form"></p>
+                <p id="output-line"></p>
+                <p id="output-name_id"></p>
+                <p id="output-number_of_people"></p>
+                <p id="output-day"></p>
+                <p id="output-lin"></p>
+                </div>
+            </div>
+        </main>
+
+    </body>
+</html>
